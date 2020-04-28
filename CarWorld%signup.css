@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    z-index: 1;
+   
+}
+body{
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh; 
+    z-index: 1;   
+    background-image:url('jesko.jpg');
+    background-repeat: no-repeat;
+}
+.face{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(252, 240, 79);
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+.face::before{
+    content: "";
+    position: absolute;
+    top:80px;
+    width: 70px;
+    height:10px;
+    background:saddlebrown;
+    border-radius: 70% 70% 20% 20%;
+    transition:0.4s;
+
+}
+.face:hover::before{
+    top:80px;
+    width:70px;
+    height:30px;
+    background: saddlebrown;
+    border-radius: 20% 20% 100px 100px;
+}
+.eyes{
+     position: relative;
+     top:-20px;
+     display:flex;
+    }
+ .eyes .eye{
+     position: relative;
+     width:40px;
+     height: 40px;
+     display:block;
+     background: white;
+     margin:6px;
+     border-radius: 50%;
+ }   
+ .eyes .eye::before{
+     content: "";
+     position:absolute;
+     top:50%;
+     left:25%;
+     transform: translate(-50%,-50%);
+     width:15px;
+     height: 15px;
+     background: rgb(12, 12, 12);
+     border-radius: 50%;
+ }
+ .bottom_logo img{
+     height: 80px;
+     width:70px;
+     margin-top: 20px;
+     margin-left: 20px;
+    }
+ .wrapper{
+      
+     width: 530px;
+     height:680px;
+     color:black;
+     top:50%;
+     left:23%;
+     padding: 40px 40px;
+     position: absolute;
+     transform: translate(-50%,-50%);
+     box-sizing: border-box;
+     border-radius: 5%;
+     box-shadow: 15px 15px 50px black;
+    
+ }    
+ h1{
+     text-align: center;
+     font-family: kristen itc;
+     color:rgb(240, 88, 61);
+     font-size:50px;
+     font-weight: bolder;
+ }
+ h2{
+     text-align: center;
+     font-family: Arial Rounded MT;
+     color: rgb(184, 105, 236);
+     font-size: 35px;
+     margin-top: 5px;
+    }
+  .wrapper input{
+      width:70%;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      height: 50px;
+      margin-left: 25px;
+      transition: 0.5s;
+      box-sizing: border-box;
+      color: rgb(102, 221, 241);
+      
+    }  
+ .wrapper input[type=text],.wrapper input[type=password]{
+    border-style: hidden;
+    box-sizing: border-box;
+     border-block-color : transparent;
+    border:3px solid slateblue;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial Rounded MT;
+    color:rgb(102, 221, 241);
+    opacity: 1;
+    background-color: transparent;
+}    
+.wrapper input[type=button]{
+    border: 2px solid rgb(59, 93, 112);
+    height:50px;
+    width:120px;
+    font-family: Arial Rounded MT;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(36, 90, 92);
+    text-decoration: none; 
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    margin-bottom: 10px;
+ }
+ .wrapper input[type=text]:hover,.wrapper input[type=password]:hover{
+     width:90%;
+     border:3px solid white;
+     color: rgb(102, 221, 241);
+    }
+    .wrapper input[type=button]:hover{
+        
+        width:130px;  
+        font-size: 22px;
+        text-decoration: none;
+    }
+    .wrapper input[type=checkbox]{
+        height:15px;
+        width:15px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: -20px;
+    }
+     h6 {
+       color: rgb(17, 16, 16);
+       font-size: 17px;
+       margin-left: 50px;
+       margin-top: -22px;
+       font-family:  Arial Rounded MT;
+    }
+    .bottom-text a{
+         float:right;
+         text-decoration: none;
+         font-size: 22px;
+         color: rgb(255, 255, 255);
+         font-family:  Arial Rounded MT;
+         margin-top: -50px;
+         transition: 0.4s;
+        }
+        .bottom-text a:hover{
+            font-size: 25px;
+            color: rgb(253, 253, 255);
+        } 
+     

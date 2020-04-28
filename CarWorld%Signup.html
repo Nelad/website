@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title >CarWorld Sign Up</title>
+        <link rel="icon" type="image/png" href="CarWorld_logo.png">
+        <link rel="stylesheet" href="CarWorld%signup.css">
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        
+        <script>    
+    
+                 document.querySelector('body').addEventListener('mousemove',eyeball);
+                 function eyeball() {
+                 var eye= document.querySelectorAll('.eye');
+                 eye.forEach(function(eye){
+                     let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+                     let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+                     let radian = Math.atan2(event.pageX-x, event.pageY-y);
+                     let rot= (radian*(180 / Math.PI) *( -1)) + 270;
+                     eye.style.transform = "rotate("+ rot + "deg)";
+                 });
+               }
+               function check(form) {
+   
+    if(form.pswd.value == form.cnf_pswd.value ){
+        alert("Sign Up Successfully..")
+    
+    }
+    else{
+        alert("Password do not Matched...")
+    
+}
+               
+  }      
+        </script> 
+       <div class="wrapper">
+           <h1>CarWorld</h1>
+           <h2>Sign Up</h2>
+           <div class="face">
+             <div class="eyes">
+                 <div class="eye"></div>
+                 <div class="eye"></div>
+              </div>
+         </div> 
+           <form name="login">
+               <input type="text" required placeholder="Username or Email address" name="userid" >
+               <input type="password" required placeholder="Password" name="pswd" >
+               <input type="password" required placeholder="Confirmed Password" name="cnf_pswd" >
+               <input type="button"  onclick="check(this.form)" value="Sign Up"/>
+            </form>
+           <div class="bottom-text">
+               <input type="checkbox" name="Remember Me" checked="checked">
+               
+                <h6>Remember Me</h6>
+            </div>
+           
+        </div>
+        </div>
+    
+    
+    </body>
+    </html>

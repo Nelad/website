@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >CarWorld</title>
+        <link rel="icon" type="image/png" href="CarWorld_logo.png">
+        <link rel="stylesheet" href="CarWorld.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" >
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+   </head>
+   <body>
+    
+    <header>
+      <input type="checkbox" id="check" style="visibility: hidden;">
+        <label for="check">
+          <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <nav>   
+        
+          <div class="menu clearfix" >
+            <img src="CarWorld_logo.png" class="logo">
+             <h class="heading">Car<span>World</span></h>
+             <a href="CarWorld_Signup%loder.html" class="btn">Sign Up</a>
+             <a href="CarWorld_loginloader.html" class="btn">Login</a>
+           </div>
+        </nav> 
+       
+   <script>    
+    
+          document.querySelector('body').addEventListener('mousemove',eyeball);
+          function eyeball() {
+          var eye= document.querySelectorAll('.eye');
+          eye.forEach(function(eye){
+              let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+              let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+              let radian = Math.atan2(event.pageX-x, event.pageY-y);
+              let rot= (radian*(180 / Math.PI) *( -1)) + 270;
+              eye.style.transform = "rotate("+ rot + "deg)";
+          });
+        }
+      </script>    
+        <div class="sidebar">
+          <center>
+            <img src="user.png" class="profile_image" alt="">
+            <h4>CarWorld</h4>
+          </center>
+          <a href="#check"><i class="fas fa-home"></i><span>Home</span></a>
+          <a href="#brand"><i class="fas fa-car-alt"></i><span>Brands</span></a> 
+          <a href="#New_Cars"><i class="fas fa-car-alt"></i><span>New Arrived</span></a>
+          <a href="#main-content"><i class="fas fa-desktop"></i><span>About Us</span></a>
+          <a href="#main-content"><i class="fas fa-id-card-alt"></i><span>Contact Us</span></a>
+          
+           
+            
+      </div>
+        
+      </header>
+      <div class="main_content rellax " data-rellax-speed="6">
+        <h1 style="margin-left: 5%;">We Know</h1>   
+        <h1>We're Awesome</h1>
+        </div>
+        <div class="wrapper rellax" data-rellax-speed="6" >
+          
+          <div class="face">
+           <div class="eyes">
+               <div class="eye"></div>
+               <div class="eye"></div>
+           </div>
+       </div> 
+      </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+     <script>
+        var rellax = new Rellax('.rellax');
+     </script>
+    <div id="brand">
+
+     <blockquote>Brand is Enough</blockquote>
+     </div> 
+      <div class="all_brands">
+        <a href=""><img src="koenigsegg logo.png" class="koenigsegg_l "></a>
+        <a href=""><img src="hennessey logo.jfif"  class="hennessey_l "></a>
+        <a href=""><img src="pagani logo.jpg" class="pagani_l"></a>
+        <a href=""><img src="bugatti logo.jpg" class="bugatti_l"></a>
+        <a href=""><img src="  lamborghini logo.jpg" class="lamborghini_l "></a>
+        
+        
+        
+     </div>
+    <div id="New_Cars">
+      <blockquote>Check Out New Fasters..</blockquote>
+    </div> 
+    <div class="cars">
+      <div class="jeskocar">
+      <a href="#"><img src="jeskocar.jpg" class="jeskocar"></a>
+      <h>The Jesko Absolute</h>
+      <h2>The fastest Koenigsegg ever –<br> forever</h2>
+    </div>
+    <div class="bugatticar">
+      <a href="#"><img src="bugatticar.jpg" class="bugatticar"></a>
+      <h>The All New Bugatti Divo</h>
+      <h2>DESIGNED TO PERFORM</h>
+      <h3>TRACE THE UNIQUE SHAPES OF A MASTERPIECE</h2>
+    </div>
+    <div class="hennesseycar">
+      <a href="#"><img src="hennesseycar.jpg" class="hennesseycar"></a>
+      <h>Hennessey Venom f5</h>
+      <h2>Hennessey Pinnacle Performance..</h2>
+      
+    </div>
+    </div> 
+     <footer>
+       <div id="main-content">
+         <div class="left box">
+           <h2>About Us</h2>
+             <div class="content">
+              <p>We are delivering Best Car updates details for every Smart Guy , Who is Amesome like us  </p> 
+               <div class="social">
+                 <a href="#"><span class="fab fa-facebook-f"></span></a>
+                 <a href="#"><span class="fab fa-twitter"></span></a>
+                 <a href="#"><span class="fab fa-instagram"></span></a>
+                 <a href="#"><span class="fab fa-youtube"></span></a>
+               </div> 
+            </div> 
+         </div>
+          <div class="center box">
+            <h2>Address</h2>
+              <div class="content">
+                <div class="place">
+                  <span class="fas fa-map-marker-alt"></span>
+                  <span class="text">P.P. Savani University , Surat</span>
+                </div>
+                <div class="phone">
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="text">+9112345667890</span>
+                </div>
+                <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="text">carworld@abc.com</span>
+                </div>
+              </div>
+          </div>
+           <div class="right box">
+             <h2>Contact Us</h2>
+             <div class="content">
+               <form action="#">
+                 <div class="email">
+                   <div class="text">Email Us*</div>
+                  <input type="email" required>
+                 </div>
+                  <div class="msg">
+                    <div class="text">Message*</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                  </div>
+                  <div class="butn">
+                    <button input type="submit">Send</button>
+                  </div>
+               </form>
+             </div>
+           </div>
+        </div>
+     </footer>
+  </body>
+</html>
+
+  
+
